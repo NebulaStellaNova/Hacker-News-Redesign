@@ -182,7 +182,7 @@
     if (window.location.href.includes("?user=")) {
         pickSection("user/" + window.location.href.slice(window.location.href.lastIndexOf("?user=")+("?user=".length), window.location.href.length))
     }
-    if (window.location.href.includes("?post=")) {
+    if (window.location.href.includes("?post=")) { 
         pickPost(window.location.href.slice(window.location.href.lastIndexOf("?post=")+("?post=".length), window.location.href.length))
     }
     function pickPost(postID) {
