@@ -1,3 +1,10 @@
+html {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+body {
+    background: rgba(0, 0, 0, 0.5);
+}
+
 #title {
     height: 20px; 
     align-items: center;
@@ -92,6 +99,7 @@
 
 
 .page {
+    scroll-behavior: smooth;
     color: white;
     top: 40px;
     left: 0;
@@ -103,19 +111,25 @@
     overflow-y: scroll;
     padding: 10px;
 }
-
+.fonter {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
 .post {
     font-family: "Poppins", sans-serif;
     font-style: normal;
 
     width: calc(100% - 40px);
-    height: 40px;
     background: rgb(50, 50, 50);
     padding: 20px;
     border-radius: 10px;
 
     line-height: 20px;
     margin-bottom: 10px;
+
+    overflow-x: scroll;
+    white-space:normal;
+    max-width: calc(100% - 40px) !important;
 }
 
 .post-title {
@@ -131,4 +145,44 @@
     font-size: 12px;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.5);
+}
+
+.buttonTemplate {
+    border: 0px solid #000;
+    border-radius: 10px;
+    background: rgb(50, 50, 50);
+    color: white;
+
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+
+    padding: 5px;
+}
+.buttonTemplate2 {
+    border: 0px solid #000;
+    border-radius: 10px;
+    background: rgb(50, 50, 50);
+    color: white;
+
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.buttonTemplate:active {
+    background: rgb(90, 90, 90);
+}
+
+.buttonTemplate:hover {
+    cursor: pointer;
+    background: rgb(60, 60, 60);
+}
+
+#leftright {
+    display: flex;
+    gap: 10px;  
+    justify-content: center;
 }
