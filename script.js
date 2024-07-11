@@ -137,7 +137,7 @@
             parts:          postJSON.parts          !== undefined ? true : false,
             descendants:    postJSON.descendants    !== undefined ? true : false
         }
-        let xPos = has.type ? (postJSON.type == "comment" ? 20*curRecersive : 0) : 0
+        let xPos = has.type ? (postJSON.type == "comment" ? 20 : 0) : 0
         // let types = ["job", "story", "comment", "poll", "pollopt"]
         let title = "";
         let score = has.score ? postJSON.score : 0;
@@ -228,7 +228,7 @@
                 //console.log();
                 pages = list.entries.length/20;
                 try {
-                document.getElementById('pageCount').innerHTML = Math.ceil(pages);
+                    document.getElementById('pageCount').innerHTML = Math.ceil(pages);
                 } catch {
                     console.log("Page counter is not on screen.")
                 }
