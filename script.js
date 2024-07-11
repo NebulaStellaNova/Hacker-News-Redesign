@@ -146,7 +146,7 @@
         let clickFunction = postJSON.type == "comment" ? "console.log('You tried to click on a comment silly.');" : `pickPost(${id})`
         if (has.type) {
             switch (postJSON.type) {
-                case "story":
+                case "story": case "job":
                     if (has.title) {
                         title = postJSON.title;
                     } else {
