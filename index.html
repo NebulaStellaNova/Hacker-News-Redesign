@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html style="background : rgba(0, 0, 0, 0.5);">
     <head>
         <title>Hacker News</title>
         <link rel="icon" href="y18.svg"/>
@@ -25,12 +25,12 @@
             </div>
 
             <span class="center">
-                <span onclick="activate(this);" class="link">Newest</span> | 
-                <span onclick="activate(this);" class="link active">Top</span> | 
-                <span onclick="activate(this);" class="link">Best</span> | 
-                <span onclick="activate(this);" class="link">Asks</span> | 
-                <span onclick="activate(this);" class="link">Shows</span> | 
-                <span onclick="activate(this);" class="link">Jobs</span> | 
+                <span onclick="activate(this);" class="link" id="newstories">Newest</span> | 
+                <span onclick="activate(this);" class="link" id="topstories">Top</span> | 
+                <span onclick="activate(this);" class="link" id="beststories">Best</span> | 
+                <span onclick="activate(this);" class="link" id="askstories">Asks</span> | 
+                <span onclick="activate(this);" class="link" id="showstories">Shows</span> | 
+                <span onclick="activate(this);" class="link" id="jobstories">Jobs</span> | 
                 <span onclick="activate(this);" class="link">About</span>
             </span>
 
@@ -50,6 +50,14 @@
                 <span class="post-desc">Post Description</span>
             </div>
         </div>
+        <div id="scrolltop" onclick="document.getElementById('thePoster').scrollTop = 0;">
+            To<br>Top
+        </div>
+
+        
+
+        <a class="version link" href="https://www.github.com/jasontheone111/Hacker-News-Redesign/" target="_blank" style="bottom: calc(5px + 3vmin);">Rehacked v0.1.1</a>
+        <a class="version link" href="https://creativecommons.org/policies/#licensing%20statement" target="_blank">© Nebula S. Nova 2024</a>
         <script src="script.js"></script>
     </body>
 </html>

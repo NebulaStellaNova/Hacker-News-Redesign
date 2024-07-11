@@ -1,5 +1,5 @@
 html {
-    background-color: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.5);
 }
 body {
     background: rgba(0, 0, 0, 0.5);
@@ -19,9 +19,9 @@ body {
     position: fixed;
     left: 0;
     top: 0;
-    line-height: 20px;
-    height: 20px;
-    font-size: 15px;
+    line-height: 3vmin;
+    height: 3vmin;
+    font-size: 2vmin;
     width: 100%;
     padding: 10px;
     align-items: center;
@@ -38,7 +38,7 @@ body {
 
 .center {
     display: inline-block;
-    transform:translateY(-40px);
+    transform:translateY(calc(-3vmin - 20px));
 
     font-family: "Poppins", sans-serif;
     font-weight: 400;
@@ -101,11 +101,11 @@ body {
 .page {
     scroll-behavior: smooth;
     color: white;
-    top: 40px;
+    top: calc(3vmin + 20px);
     left: 0;
     width: calc(100% - 20px);
     background: rgb(100, 100, 100);
-    height: calc(100% - 30px - 30px);
+    height: calc(100% - 3vmin - 40px);
     display: block;
     position: fixed;
     overflow-y: scroll;
@@ -185,4 +185,42 @@ body {
     display: flex;
     gap: 10px;  
     justify-content: center;
+    padding-bottom: 10px;
+}
+
+.version {
+    font-size: 3vmin;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    color: white;
+    position: fixed;
+    bottom: 5px;
+    right: 25px;
+    font-weight: 700;
+}
+
+#scrolltop {
+    font-size: 2vmin;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    color: white;
+    position: fixed;
+    text-align: center;
+    bottom: 100px;
+    right: 25px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 100%;
+    width: 6vmin;
+    height: 6vmin;
+    opacity: 0;
+
+    -webkit-transition: opacity 100ms linear;
+    -ms-transition: opacity 100ms linear;
+    transition: opacity 100ms linear;
+}
+
+#scrolltop:hover {
+    background: rgba(30, 30, 30, 0.5);
+    cursor: pointer;
 }
